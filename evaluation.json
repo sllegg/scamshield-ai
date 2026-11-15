@@ -1,0 +1,51 @@
+{
+  "raw": 5574,
+  "unique": 5159,
+  "train": 4127,
+  "test": 1032,
+  "model": {
+    "tn": 893,
+    "fp": 11,
+    "fn": 8,
+    "tp": 120,
+    "accuracy": 0.9815891472868217,
+    "precision": 0.916030534351145,
+    "recall": 0.9375
+  },
+  "baseline": {
+    "tn": 904,
+    "fp": 0,
+    "fn": 128,
+    "tp": 0,
+    "accuracy": 0.875968992248062,
+    "precision": null,
+    "recall": 0.0
+  },
+  "errors": [
+    {
+      "text": "Sir, i am waiting for your call, once free please call me.",
+      "actual": "ham",
+      "predicted": "spam"
+    },
+    {
+      "text": "Sorry I missed your call let's talk when you have the time. I'm on 07090201529",
+      "actual": "spam",
+      "predicted": "ham"
+    },
+    {
+      "text": "Nokia phone is lovly..",
+      "actual": "ham",
+      "predicted": "spam"
+    },
+    {
+      "text": "Glad to see your reply.",
+      "actual": "ham",
+      "predicted": "spam"
+    },
+    {
+      "text": "Sorry! U can not unsubscribe yet. THE MOB offer package has a min term of 54 weeks> pls resubmit request after expiry. Reply THEMOB HELP 4 more info",
+      "actual": "spam",
+      "predicted": "ham"
+    }
+  ]
+}

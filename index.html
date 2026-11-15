@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>ScamShield AI · SMS checker</title><link rel="stylesheet" href="style.css">
+<main><header>ScamShield <b>AI</b></header><h1>Check a text message.</h1>
+<p>Use a public or made-up English SMS. Your text stays in this tab. We never send or save it.</p>
+<section><label for="sms">Message to check</label><textarea id="sms" rows="4" maxlength="5000" spellcheck="false" autocomplete="off" placeholder="Paste an SMS or try the example"></textarea>
+<button id="check">Check message</button> <button class="quiet" id="example">Try an example</button> <button class="quiet" id="clear">Clear</button>
+<div id="result" aria-live="polite"></div></section>
+<p><strong>Do not click suspicious links.</strong> If a message mentions your account, open your bank’s official app yourself. A ham prediction does not verify the sender.</p>
+<details><summary>How did the filter perform?</summary><div id="audit"></div></details>
+<footer>Educational prototype. This is not a bank security service.<br>This project is a prototype and is not financial advice.</footer></main>
+<script src="model.js"></script><script src="classify.js"></script><script src="app.js"></script></html>
